@@ -377,16 +377,3 @@ class Dog extends Animal {
 **Assessment:**
 Why is Object the root class in Java?
 
----
-
-## Final Assessment (Optional – 60 mins)
-- Explain OOP pillars with examples
-- Design a simple encapsulated class
-- Predict outputs of Java programs
-
----
-
-## Trainer Delivery Notes
-- Focus on **why over syntax**
-- Encourage engineers to predict output
-- Relate concepts to enterprise systems
