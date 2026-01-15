@@ -3,7 +3,7 @@ package com.naveen.polymorphism;
 /// for the class you have have multiple constructor like default which does not accept any parameters 
 /// parametric constructor which take the values and assign it 
 /// 
-public class Account {
+public abstract class Account {
 	private int accountId; 
 	private String holderName;
 	private double balance; 
@@ -58,10 +58,7 @@ public class Account {
 	}
 	
 	
-	public double checkBalance() {
-		System.out.println("in Account class>>>> ");
-		return this.balance; 
-	}
+	public abstract double checkBalance();
 
 
 	
