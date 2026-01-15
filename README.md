@@ -377,3 +377,42 @@ class Dog extends Animal {
 **Assessment:**
 Why is Object the root class in Java?
 
+
+
+
+## in class discussion 
+
+- access specifiers - public private protected default 
+- access modifiers - static void final synchronize 
+
+
+### to explore 
+- jdeps, jmap, jheap etc 
+- look for EJB  
+
+### exploring helloworld 
+- java/lang/Object
+- java/lang/System
+- java/io/PrintStream
+- println
+- java/lang/String
+- Hello World
+
+- https://docs.oracle.com/javase//7/docs/api/overview-summary.html
+
+
+
+
+### variable conventions 
+- packages - lower case, seperate with . 
+- class name - pascal case - EmployeeSalary, BusinessLogic 
+- variable, method - camel case - empId, processSalary() 
+- constancts - final - UPPER CASE 
+
+
+### Access Specifiers 
+
+- private variables/methods  are accessed only in the class 
+- default variables / methods can be accessed within the package inhe or not inhe 
+- protected variables / methods can be accessed outside the package only if they are inherited 
+- public scope can be accessed any where  
