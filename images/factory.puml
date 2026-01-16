@@ -1,0 +1,56 @@
+@startuml
+
+package "com.naveen.factory" {
+
+    interface IVehicle {
+        + move() : void
+        + getType() : Types
+    }
+
+    enum Movement {
+        START
+        STOP
+        ACCELERATE
+    }
+
+    enum Types {
+        CAR
+        BIKE
+        TRUCK
+    }
+
+    class Car {
+        + move() : void
+        + getType() : Types
+    }
+
+    class Bike {
+        + move() : void
+        + getType() : Types
+    }
+
+    class Truck {
+        + move() : void
+        + getType() : Types
+    }
+
+    class VehicleFactory {
+        + getVehicle(type : Types) : IVehicle
+    }
+
+    class CarFactoryApp {
+        + main(args : String[]) : void
+    }
+
+    IVehicle <|.. Car
+    IVehicle <|.. Bike
+    IVehicle <|.. Truck
+
+    VehicleFactory --> IVehicle : creates
+    VehicleFactory --> Types
+
+    CarFactoryApp --> VehicleFactory
+    CarFactoryApp --> IVehicle
+}
+
+@enduml

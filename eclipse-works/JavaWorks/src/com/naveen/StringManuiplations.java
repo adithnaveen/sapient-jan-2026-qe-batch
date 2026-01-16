@@ -14,14 +14,10 @@ public class StringManuiplations {
 		System.out.println("length :" + myString.substring(3));
 		System.out.println(myString.toUpperCase()); 
 		
-		
-		
 		String newMyString = myString.toUpperCase(); 
 		System.out.println("newMyString hasCode " + newMyString.hashCode());
 		System.out.println("myString hasCode " + myString.hashCode());
-		
 	
 		StringBuffer sb = new StringBuffer("StringBuffer"); 
-		
 	}
 }
