@@ -6,6 +6,7 @@ public class Tank {
 	
 	public Tank(int capacity) {
 		this.capacity = capacity; 
+		this.fuleInTank = capacity;
 	}
 	
 	public int getCapacity() {
@@ -22,4 +23,11 @@ public class Tank {
 	public boolean isEmpty() {
 		return this.fuleInTank==0; 
 	}
+
+	@Override
+	public String toString() {
+		return "Tank [capacity=" + capacity + ", fuleInTank=" + fuleInTank + "]";
+	}
+	
+	
 }

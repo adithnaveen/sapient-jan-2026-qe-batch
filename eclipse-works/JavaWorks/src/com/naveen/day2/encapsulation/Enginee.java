@@ -1,7 +1,9 @@
 package com.naveen.day2.encapsulation;
 
-public abstract class Enginee {
-	public abstract void start();
+public  class Enginee {
+	public void start() {
+		System.out.println("Enginee is starring");
+	}
 
 	// make it concrete to show case
 	public void stop(Tank tank) {
@@ -12,4 +14,8 @@ public abstract class Enginee {
 					+ tank.getFuleInTank());
 	}
 
+	@Override
+	public String toString() {
+		return "Enginee is getting returned";
+	}
 }

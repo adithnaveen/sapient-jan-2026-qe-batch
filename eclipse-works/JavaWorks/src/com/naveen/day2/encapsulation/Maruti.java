@@ -1,14 +1,20 @@
 package com.naveen.day2.encapsulation;
 
-public class Maruti extends Enginee{
-	@Override
-	public void start() {
-		System.out.println("Maruti enginee is starting");
+public class Maruti extends Car{
+
+	private Tank tank; 
+	private Enginee enginee;
+	
+	public Maruti(Tank tank, Enginee enginee) {
+		this.tank = tank; 
+		this.enginee = enginee; 
 	}
 	
-	@Override
-	public void stop(Tank tank) {
-		System.out.println("Maruti Enginee stopping");
+	public void marutiStart() {
+		super.getEnginee().start(); 
 	}
-
+	
+	public void marutiStop() {
+		super.getEnginee().stop(tank);
+	}
 }

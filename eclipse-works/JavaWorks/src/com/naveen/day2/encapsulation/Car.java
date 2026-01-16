@@ -5,19 +5,29 @@ public class Car {
 	private Tank tank;
 
 	public Car() {
-		enginee = new Enginee() {
+		this.enginee = new Enginee() {
 			
 			@Override
 			public void start() {
 				System.out.println("When fuel availalbe enginee will start ");
 			}
 		};
-		tank = new Tank(100);
+		this.tank = new Tank(100);
 	}
 
 	public Car(Enginee enginee, Tank tank) {
 		this.enginee = enginee;
 		this.tank = tank;
+	}
+	
+	
+
+	public Enginee getEnginee() {
+		return enginee;
+	}
+
+	public Tank getTank() {
+		return tank;
 	}
 
 	@Override

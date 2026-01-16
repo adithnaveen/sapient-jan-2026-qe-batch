@@ -433,3 +433,61 @@ Why is Object the root class in Java?
         }
     }
 ```
+
+
+```
+
+Car is Car [enginee=com.naveen.day2.encapsulation.Car$1@4783da3f, tank=com.naveen.day2.encapsulation.Tank@378fd1ac]
+When fuel availalbe enginee will start 
+Car is Car [enginee=com.naveen.day2.encapsulation.Maruti@37f8bb67, tank=com.naveen.day2.encapsulation.Tank@49c2faae]
+Maruti enginee is starting
+Car is Car [enginee=com.naveen.day2.encapsulation.Toyota@20ad9418, tank=com.naveen.day2.encapsulation.Tank@31cefde0]
+Toyota enginee is starting
+
+
+------------------------------------------------
+
+Car is Car [enginee=Enginee [toString()=com.naveen.day2.encapsulation.Car$1@4783da3f], tank=Tank [capacity=100, fuleInTank=0]]
+When fuel availalbe enginee will start 
+Car is Car [enginee=Enginee [toString()=com.naveen.day2.encapsulation.Maruti@21b8d17c], tank=Tank [capacity=123, fuleInTank=0]]
+Maruti enginee is starting
+Car is Car [enginee=Enginee [toString()=com.naveen.day2.encapsulation.Toyota@6433a2], tank=Tank [capacity=200, fuleInTank=0]]
+Toyota enginee is starting
+
+
+--------------------------
+
+Car is Car [enginee=Enginee is getting returned, tank=Tank [capacity=100, fuleInTank=0]]
+When fuel availalbe enginee will start 
+Car is Car [enginee=Enginee is getting returned, tank=Tank [capacity=123, fuleInTank=0]]
+Maruti enginee is starting
+Car is Car [enginee=Enginee is getting returned, tank=Tank [capacity=200, fuleInTank=0]]
+Toyota enginee is starting
+
+```
+
+
+### diff between is-a and has-a relation ship 
+
+
+```
+    -- is a is a tightly coupled 
+
+    abstract class Vehicle {
+        abstract move();
+    }
+
+    class Car extends Vehicle {
+        -- for has a relation ship 
+        private Steering ; 
+
+        public Car (Steering steering) {
+            this.steering = steering;
+        }
+
+        move() {
+
+        }
+    }
+
+```
