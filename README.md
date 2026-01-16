@@ -491,3 +491,9 @@ Toyota enginee is starting
     }
 
 ```
+
+### the final usage 
+
+- final can be kept in class level to prevent inheritance 
+- final is used to have constants in java 
+- fianl is used in method level not to override 
