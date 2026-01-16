@@ -416,3 +416,20 @@ Why is Object the root class in Java?
 - default variables / methods can be accessed within the package inhe or not inhe 
 - protected variables / methods can be accessed outside the package only if they are inherited 
 - public scope can be accessed any where  
+
+
+### variable scope 
+
+```
+    {
+        declare variable 1
+        {
+            declare variable 2
+        }
+
+        {
+            1 is visbile and available 
+            2 is no available not visible 
+        }
+    }
+```
